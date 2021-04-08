@@ -1,0 +1,71 @@
+[
+    {
+      "key": "85c1c8ad-9b0d-49e3-a1d9-a869cfc64007",
+      "numberOfBids": 4,
+      "commodity": "المنسوجات",
+      "vehicleType": "جامبو مقفول",
+      "price": 6352,
+      "addresses": [
+        {
+          "order": 1,
+          "key": "5dc8bebc-b007-44da-9343-d25542c9a7a6",
+          "latitude": 29.8058694,
+          "longitude": 32.08891870000002,
+          "name": "لبيا"
+        },
+        {
+          "order": 2,
+          "key": "18bb15cf-e5d1-4efe-9c60-c642f93c1229",
+          "latitude": 29.8058694,
+          "longitude": 32.08891870000002,
+          "name": "البحيرة"
+        }
+      ]
+    },
+    {
+      "key": "d59ed430-88f0-40ba-b1d3-af77566e8fd9",
+      "numberOfBids": 5,
+      "commodity": "فلز",
+      "vehicleType": "دبابة",
+      "price": 7240,
+      "addresses": [
+        {
+          "order": 1,
+          "key": "e40bd539-4448-4876-a0c8-c730813eaa6b",
+          "latitude": 29.8058694,
+          "longitude": 32.08891870000002,
+          "name": "الهايكستب"
+        },
+        {
+          "order": 2,
+          "key": "0f125406-6c54-4dd9-8a1e-bb9d508e339f",
+          "latitude": 29.8058694,
+          "longitude": 32.08891870000002,
+          "name": "العاشر من رمضان"
+        }
+      ]
+    },
+    {
+      "key": "cbf136a3-5a9b-426a-9395-e2274de2378c",
+      "numberOfBids": 3,
+      "commodity": "المنسوجات",
+      "vehicleType": "قلاب",
+      "price": 6084,
+      "addresses": [
+        {
+          "order": 1,
+          "key": "33b354e0-b96b-4b2e-ad2f-27292c4a9333",
+          "latitude": 29.8058694,
+          "longitude": 32.08891870000002,
+          "name": "البحيرة"
+        },
+        {
+          "order": 2,
+          "key": "a5c0e559-05f7-4cd7-9f75-f72d2bd9a6f3",
+          "latitude": 29.8058694,
+          "longitude": 32.08891870000002,
+          "name": "كينج مريوط"
+        }
+      ]
+    }
+  ]
