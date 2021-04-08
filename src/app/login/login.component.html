@@ -1,1 +1,18 @@
-<p>login works!</p>
+<section class="login">
+    <div class="login-content">
+        <h1>Welcome! 👋</h1>
+
+        <form [formGroup]="loginForm">
+            <mat-form-field appearance="outline">
+              <mat-label>Username</mat-label>
+              <input matInput type="text" placeholder="Enter your user name" formControlName="username"
+                required />
+              <mat-error *ngIf="f.username.hasError('required') && (f.username.touched || f.username.dirty)"> Username is required </mat-error>
+              <mat-error *ngIf="f.username.hasError('email') && (f.username.touched || f.username.dirty)"> This is not an Email </mat-error>
+            </mat-form-field>
+            <div class="flex flex-row mb-14 justify-between">
+                <button mat-stroked-button type="submit" (click)="onSubmit()">Continue</button>
+            </div>
+          </form>
+    </div>
+</section>
