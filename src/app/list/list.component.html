@@ -1,1 +1,62 @@
-<p>list works!</p>
+<section class="list-page">
+  <div class="page-content">
+    <img class="logo" src="assets/TrellaLogoWhite.png" alt="Trella's Logo">
+
+    <div class="header">
+      <div>
+        <h1>Shipments List</h1>
+        <p>Manage your shipments here</p>
+      </div>
+      <button mat-flat-button (click)="toggleFilter()">Filter<mat-icon [ngClass]="{'rotate-icon': showFilter}">expand_more</mat-icon></button>
+    </div>
+
+    <div class="filter-menu" *ngIf="showFilter" [@fadeInOut]>
+        <form [formGroup]="filterForm">
+            <div class="field-container">
+                <mat-form-field color='accent'>
+                    <input type="number" matInput formControlName="longitude" placeholder="Longitude">
+                </mat-form-field>
+            </div>
+            <div class="field-container">
+                <mat-form-field color='accent'>
+                    <input type="number" matInput formControlName="latitude" placeholder="Latitude">
+                </mat-form-field>
+            </div>
+        </form>
+        <button mat-stroked-button class="filter-button" (click)="submit()"><mat-icon>filter_alt</mat-icon>Filter</button>
+    </div>
+
+    <div class="shipment-container">
+
+      <div class="shipment-card" *ngFor="let shipment of shipments">
+        <div class="row">
+          <div class="data-element"><span class="label"><mat-icon>sell</mat-icon>Bids</span><span class="data">{{shipment.numberOfBids}}</span>
+          </div>
+          <div class="data-element"><span class="label"><mat-icon>local_shipping</mat-icon>Commodity</span><span
+              class="data">{{shipment.vehicleType}}</span></div>
+        </div>
+        <div class="row">
+          <div class="data-element"><span class="label"><mat-icon>payments</mat-icon>Price</span><span class="data">{{shipment.price}}</span></div>
+          <div class="data-element"><span class="label"><mat-icon>location_on</mat-icon>Address</span><span
+              class="data">{{shipment.addresses.length}}</span></div>
+        </div>
+
+        <span class="address-header">Addresses:</span>
+
+        <div class="address-list" *ngFor="let address of shipment.addresses">
+          <div class="row">
+            <div class="data-element"><span class="label">Order</span><span class="data">{{address.order}}</span></div>
+            <div class="data-element"><span class="label">Name</span><span class="data">{{address.name}}</span></div>
+          </div>
+          <div class="row">
+            <div class="data-element"><span class="label">Longitude:</span><span
+                class="data">{{address.longitude}}</span></div>
+            <div class="data-element"><span class="label">Latitude:</span><span class="data">{{address.latitude}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

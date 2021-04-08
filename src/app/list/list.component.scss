@@ -1,0 +1,110 @@
+.list-page{
+    background-color: #161e3c;
+    min-height: 100vh;
+    .page-content{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .logo{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        height: 30px;
+    }
+    .header{
+        padding: 5px 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .rotate-icon {
+            transform: rotate(180deg);
+        }
+    }
+    .filter-menu{
+        margin: 5px 15px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        background-color: white;
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .filter-button{
+            display: block;
+            margin: 5px 0 5px auto;
+        }
+    }
+    .shipment-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0 ;
+    }
+    .shipment-card{
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        width: calc(50% - 60px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        .address-header{
+            display: block;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        .data-element{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .label{
+                font-size: 14px;
+                color: #F16523;
+                font-weight: bold;
+                mat-icon{
+                    margin-right: 5px;
+                    font-size: 14px;
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+        }
+    }
+    .address-list{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #F16523;
+        .data-element{
+            .label{
+                color: #161e3c;
+            }
+            .data{
+                color: white;
+            }
+        }
+    }
+    .field-container{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin-top: 5px;
+        mat-form-field{
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .shipment-card{
+            width: 100%;
+        }
+      }
+    
+}
+
