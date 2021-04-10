@@ -1,0 +1,7 @@
+{
+    "/marketplace": {
+      "target": "https://case-api.trella.app",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
