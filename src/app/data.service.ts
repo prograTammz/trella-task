@@ -20,7 +20,7 @@ export class DataService {
   }
 
   public getShipments(long: number = 30, lat: number = 30): Observable<HttpResponse<Shipment[]>> {
-    //return this.http.get<Shipment[]> (`https://case-api.trella.app/marketplace?lng=${long}&lat=${lat}`, {observe: 'response'});
-    return this.http.get<Shipment[]> (`assets/data.json`, {observe: 'response'});
+    return this.http.get<Shipment[]> (`/marketplace?lng=${long}&lat=${lat}`, {observe: 'response'});
+    //return this.http.get<Shipment[]> (`assets/data.json`, {observe: 'response'});
   }
 }
